@@ -13,7 +13,7 @@ class AccountData extends Data
         public string $url,
         public array $key,
         public string $status,
-        public array $contact,
+        public array|string $contact,
         public string $agreement,
         public string $initialIp,
         public string $createdAt,

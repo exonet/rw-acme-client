@@ -29,7 +29,7 @@ class AccountData extends Data
             url: $url,
             key: $response->getBody()['key'],
             status: $response->getBody()['status'],
-            contact: $response->getBody()['contact'],
+            contact: $response->getBody()['contact'] ?? '',
             agreement: $response->getBody()['agreement'] ?? '',
             initialIp: $response->getBody()['initialIp'] ?? '',
             createdAt: $response->getBody()['createdAt']
